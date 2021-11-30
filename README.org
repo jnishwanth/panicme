@@ -1,0 +1,14 @@
+* panicme
+
+** What is it?
+Panicme is a simple python script to fetch a download link for any anime episode interactively from [[https://animepahe.com][animepahe]].
+** Usage
+1. Clone this repository:
+   #+BEGIN_SRC [shell-mode]
+   git clone https://github.com/jnishwanth/panicme.git
+   #+END_SRC
+2. Navigate to the directory and run the script:
+   #+BEGIN_SRC [shell-mode]
+   cd panicme
+   python main.py
+   #+END_SRC
