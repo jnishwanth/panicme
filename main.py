@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import requests, json, re
-
+import webbrowser
 api_url = f'https://animepahe.com/api'
 
 def select_anime(querry):
@@ -54,6 +54,7 @@ def main():
     anime = select_anime(input('Search for anime: '))
     episode = select_episode(anime)
     link = get_link(episode)
+    webbrowser.open(link)
     print(link)
     return link
 
