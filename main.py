@@ -51,10 +51,11 @@ def get_link(episode):
     return resp['data'][-1]['1080']['kwik_adfly']
 
 def main():
-    anime = select_anime(input('Search for anime: '))
+    anime = select_anime(input('Search for anime that you want to watch: '))
     episode = select_episode(anime)
     link = get_link(episode)
     webbrowser.open(link)
+
     print(link)
     return link
 
